@@ -15,9 +15,10 @@ abstract class PotionBase {
 
    public void mix() {
        System.out.println("\nChoose an ingredient to begin the potion:\n");
-       for(int i = 0; i <= ITEMLIST.length; i++) {
+       for(int i = 0; i < ITEMLIST.length; i++) {
            System.out.println(i + " - " + ITEMLIST[i]);
        }
+       System.out.print("\nEnter a corresponding ingredient number: ");
        int x = s.nextInt();
        if (x == 1) item = ITEMLIST[1];
        else if (x == 2) item = ITEMLIST[2];
