@@ -5,7 +5,7 @@ abstract class PotionBase {
 
    final String[] ITEMLIST = new String[]{ "None", "Mana Bloom", "Fool's Quiet Mushroom" };
 
-   private String item = ITEMLIST[0];
+   public String item = ITEMLIST[0];
 
    public abstract void reactivity();
    
